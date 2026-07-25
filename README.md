@@ -57,16 +57,16 @@ Business Report & Recommendations
 ## Dashboard Preview
 
 **Executive Summary**
-![Executive Summary](images/page1_executive_summary.png)
+![Executive Summary](images/Executive_summary.png)
 
 **Category Analysis**
-![Category Analysis](images/page2_category_analysis.png)
+![Category Analysis](images/Categorial_analysis.png)
 
 **Sentiment Analysis**
-![Sentiment](images/page3_sentiment.png)
+![Sentiment](images/Sentiment_analysis.png)
 
 **Recommendations**
-![Recommendations](images/page4_recommendations.png)
+![Recommendations](images/Recommendations.png)
 
 ## Repository Structure
 
