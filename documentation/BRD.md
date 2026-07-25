@@ -6,7 +6,7 @@
 ### 1. Business Problem
 
 The Google Play team wants to understand why some apps succeed in the store while
-others fail — and to identify concrete, data-backed opportunities to improve two
+others fail - and to identify concrete, data-backed opportunities to improve two
 things at once: **user satisfaction** and **developer success**. Today, Play Store
 decisions (which apps to feature, which developer behaviors to encourage, where
 policy or tooling could help) are made without a systematic view connecting app
@@ -52,7 +52,7 @@ recommendations.
 |---|---|
 | Average Rating | Baseline quality signal per app/category |
 | Installs | Reach / market penetration |
-| Estimated Revenue | Price × Installs (proxy — real revenue isn't in this dataset) |
+| Estimated Revenue | Price × Installs (proxy - real revenue isn't in this dataset) |
 | Review Sentiment (VADER-scored) | Qualitative satisfaction, beyond the star rating |
 | Update Frequency | Developer engagement / maintenance signal |
 | Category Growth | Where user demand is shifting |
@@ -65,7 +65,7 @@ covering cleaning, exploratory analysis, SQL analytics (BigQuery), statistical
 testing, NLP on review text, a Power BI dashboard, and business recommendations.
 
 **Out of scope:** real-time data, apps outside this dataset's snapshot, iOS/App
-Store comparison, actual revenue data (not available — we use installs × price as
+Store comparison, actual revenue data (not available - we use installs × price as
 a labeled *estimate*, not a real number, and we say so explicitly in the report).
 
 ### 7. Deliverables
