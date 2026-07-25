@@ -5,13 +5,11 @@
 **The business problem this project answers:** the Google Play team wants to
 understand why some apps succeed while others fail, and to find data-backed
 opportunities that improve both user satisfaction and developer success.
-This project builds the analytics pipeline to answer that — from raw data to
+This project builds the analytics pipeline to answer that from raw data to
 an interactive dashboard to prioritized business recommendations.
 
-📄 **[Full Business Report](documentation/business_report.md)** — read this first
+📄 **[Full Business Report](documentation/business_report.md)** 
 📋 **[Business Requirements Document](documentation/BRD.md)**
-📊 **[Power BI Dashboard](#)** *(add your published link)*
-📊 **[Looker Studio Dashboard](#)** *(add your published link)*
 
 ---
 
@@ -47,14 +45,14 @@ Business Report & Recommendations
 
 ## Key Findings (see [full report](documentation/business_report.md) for details)
 
-1. **App metadata barely predicts rating** — price, size, install count, and
+1. **App metadata barely predicts rating** - price, size, install count, and
    review count together explain under 1% of rating variance (R²=0.008).
    Review *text* sentiment is a far more informative quality signal.
-2. **GAME is the platform's highest-risk category at scale** — the largest
+2. **GAME is the platform's highest-risk category at scale** - the largest
    category by app count (959 apps) also has the highest negative-review
    rate (36%), nearly 60% above FINANCE (22%).
 3. **Paid apps rate modestly but significantly higher than free apps**
-   (4.26 vs. 4.17, p<0.001) — a real but minor signal.
+   (4.26 vs. 4.17, p<0.001) - a real but minor signal.
 
 ## Dashboard Preview
 
@@ -117,5 +115,4 @@ proxies. Full limitations discussion in the
 
 ## Author
 
-Mohammed — built as a portfolio project for the Google Data Analytics
-Apprenticeship 2027 application.
+Mohammed — built as a project on Google Analytics
