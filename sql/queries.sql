@@ -1,12 +1,8 @@
--- ============================================================
+
 -- Google Play Store Product Intelligence Platform
 -- SQL Analytics — BigQuery
--- Dataset: sublime-calling-503310-q3.play_store
--- ============================================================
 
--- ============================================================
--- TIER 1: BASIC (SELECT, WHERE, GROUP BY)
--- ============================================================
+SELECT, WHERE, GROUP BY
 
 -- 1. How many apps per category?
 SELECT Category, COUNT(*) AS app_count
@@ -43,9 +39,9 @@ WHERE Price > 0
 GROUP BY Category
 ORDER BY avg_price DESC;
 
--- ============================================================
--- TIER 2: INTERMEDIATE (JOINS, CASE, HAVING)
--- ============================================================
+
+JOINS, CASE, HAVING
+
 
 -- 7. Join apps + reviews: average sentiment polarity per category
 SELECT a.Category, AVG(r.Sentiment_Polarity) AS avg_sentiment_polarity
@@ -102,9 +98,8 @@ WHERE r.App IS NULL
 ORDER BY a.Installs DESC
 LIMIT 20;
 
--- ============================================================
--- TIER 3: ADVANCED (WINDOW FUNCTIONS)
--- ============================================================
+
+WINDOW FUNCTIONS
 
 -- 13. Rank apps within their category by rating (ROW_NUMBER — one clear winner)
 SELECT App, Category, Rating,
@@ -163,9 +158,7 @@ SELECT App, Category, Rating, Installs,
 FROM `play_store.apps`
 WHERE Rating IS NOT NULL;
 
--- ============================================================
--- TIER 4: BUSINESS QUESTIONS (from the BRD, combining everything above)
--- ============================================================
+BUSINESS QUESTIONS
 
 -- 22. Price elasticity proxy: does higher price correlate with lower installs, by category?
 SELECT Category,
@@ -189,7 +182,7 @@ WHERE Rating IS NOT NULL
 GROUP BY update_recency
 ORDER BY avg_rating DESC;
 
--- 24. "Worst performing developers" proxy — using Genres as a stand-in since we have no developer field
+-- 24. "Worst performing developers" proxy - using Genres as a stand-in since we have no developer field
 --     (be ready to explain this substitution in an interview — it's an honest data limitation)
 SELECT Genres, AVG(Rating) AS avg_rating, COUNT(*) AS app_count
 FROM `play_store.apps`
