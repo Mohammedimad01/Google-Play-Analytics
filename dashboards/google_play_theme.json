@@ -1,0 +1,94 @@
+{
+  "name": "Google Play Product Intelligence",
+  "dataColors": [
+    "#4285F4",
+    "#34A853",
+    "#FBBC04",
+    "#EA4335",
+    "#5F6368",
+    "#8AB4F8",
+    "#81C995",
+    "#F6C244"
+  ],
+  "background": "#FFFFFF",
+  "foreground": "#202124",
+  "tableAccent": "#4285F4",
+  "good": "#34A853",
+  "neutral": "#FBBC04",
+  "bad": "#EA4335",
+  "maximum": "#4285F4",
+  "center": "#FBBC04",
+  "minimum": "#EA4335",
+  "null": "#DADCE0",
+  "textClasses": {
+    "callout": { "fontSize": 32, "fontFace": "Segoe UI Semibold", "color": "#1A73E8" },
+    "title": { "fontSize": 14, "fontFace": "Segoe UI Semibold", "color": "#202124" },
+    "header": { "fontSize": 12, "fontFace": "Segoe UI Semibold", "color": "#5F6368" },
+    "label": { "fontSize": 10, "color": "#5F6368" }
+  },
+  "visualStyles": {
+    "page": {
+      "*": {
+        "background": [{ "show": true, "color": { "solid": { "color": "#F1F3F4" } }, "transparency": 0 }]
+      }
+    },
+    "*": {
+      "*": {
+        "background": [{ "show": true, "color": { "solid": { "color": "#FFFFFF" } } }],
+        "border": [{ "show": true, "color": { "solid": { "color": "#DADCE0" } }, "radius": 8 }],
+        "dropShadow": [{ "show": true, "color": { "solid": { "color": "#00000022" } }, "position": "Outer", "shadowBlur": 6, "angle": 90, "distance": 2 }],
+        "title": [{
+          "fontColor": { "solid": { "color": "#202124" } },
+          "background": { "solid": { "color": "#FFFFFF" } },
+          "fontSize": 13,
+          "bold": true
+        }]
+      }
+    },
+    "card": {
+      "*": {
+        "labels": [{ "color": { "solid": { "color": "#1A73E8" } }, "fontSize": 30, "fontFamily": "Segoe UI Semibold" }],
+        "categoryLabels": [{ "color": { "solid": { "color": "#5F6368" } }, "fontSize": 11 }],
+        "background": [{ "show": true, "color": { "solid": { "color": "#E8F0FE" } } }],
+        "border": [{ "show": true, "color": { "solid": { "color": "#4285F4" } }, "radius": 10 }]
+      }
+    },
+    "textbox": {
+      "*": {
+        "background": [{ "show": true, "color": { "solid": { "color": "#1A73E8" } } }]
+      }
+    },
+    "tableEx": {
+      "*": {
+        "columnHeaders": [{
+          "fontColor": { "solid": { "color": "#FFFFFF" } },
+          "backColor": { "solid": { "color": "#4285F4" } },
+          "bold": true,
+          "fontSize": 11
+        }],
+        "values": [{
+          "backColor": { "solid": { "color": "#FFFFFF" } },
+          "backColorSecondary": { "solid": { "color": "#F8F9FA" } },
+          "fontColorPrimary": { "solid": { "color": "#202124" } },
+          "fontSize": 10
+        }],
+        "total": [{
+          "backColor": { "solid": { "color": "#E8F0FE" } },
+          "fontColor": { "solid": { "color": "#1A73E8" } },
+          "bold": true
+        }]
+      }
+    },
+    "slicer": {
+      "*": {
+        "background": [{ "show": true, "color": { "solid": { "color": "#FFFFFF" } } }],
+        "header": [{
+          "fontColor": { "solid": { "color": "#FFFFFF" } },
+          "background": { "solid": { "color": "#4285F4" } },
+          "bold": true
+        }],
+        "items": [{ "fontColor": { "solid": { "color": "#202124" } } }]
+      }
+    }
+  }
+}

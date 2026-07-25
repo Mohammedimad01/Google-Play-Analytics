@@ -1,0 +1,10 @@
+pandas
+numpy
+matplotlib
+seaborn
+scipy
+statsmodels
+vaderSentiment
+wordcloud
+google-cloud-bigquery
+db-dtypes
